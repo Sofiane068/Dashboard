@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { PageConnexionComponent } from './pages/page-connexion/page-connexion.component';
 import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.component';
@@ -15,16 +14,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     PageConnexionComponent,
     PageDashboardComponent,
-    FormComponent
+    FormComponent,
   ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
